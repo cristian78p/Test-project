@@ -40,6 +40,10 @@ router.post(
     if (!periodo || !concepto_id) {
       return res.status(400).json({ error: "periodo y concepto_id son obligatorios" });
     }
+    // Validación de concepto_id: debe ser un número entero positivo y máximo 9 dígitos.
+    if (String(concepto_id).length > 9) {
+      return res.status(400).json({ error: "concepto_id debe tener como máximo 9 caracteres" });
+    }
 
     const cpt = await query(
       "SELECT * FROM concepto WHERE id = $1 AND condominio_id = $2",

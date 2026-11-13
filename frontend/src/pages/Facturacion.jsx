@@ -33,7 +33,7 @@ export default function Facturacion() {
       <div className="panel">
         <h3>Facturación masiva (cuota extraordinaria por coeficiente)</h3>
         <form className="row" onSubmit={generarMasiva}>
-          <div className="field"><label>Concepto (id)</label><input value={conceptoId} onChange={(e) => setConceptoId(e.target.value)} /></div>
+          <div className="field"><label>Concepto (id)</label><input maxLength="9" value={conceptoId} onChange={(e) => setConceptoId(e.target.value)} /></div>
           <div className="field"><label>Periodo</label><input value={periodoMasiva} onChange={(e) => setPeriodoMasiva(e.target.value)} /></div>
           <button type="submit">Generar</button>
         </form>
