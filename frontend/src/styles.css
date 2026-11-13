@@ -28,7 +28,9 @@ th { background: #eef3f8; color: var(--ink); }
 tr:last-child td { border-bottom: none; }
 .badge { padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
 .badge.Pagada { background: #e5f5ec; color: var(--green); }
-.badge.Pendiente, .badge.Vencida { background: #fbeaea; color: var(--red); }
+
+.badge.Pendiente { background: #fff3d6; color: #a86400; }
+.badge.Vencida { background: #fbeaea; color: var(--red); }
 .badge.Parcialmente { background: #fdf2e2; color: #c07c1e; }
 .panel { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; margin-bottom: 18px; }
 .panel h3 { margin: 0 0 12px; color: var(--ink); }
