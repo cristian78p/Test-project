@@ -21,14 +21,14 @@ export default function Cartera() {
       <div className="topbar"><h2>Cartera</h2><div className="who">Total: {money(cartera.cartera_total)}</div></div>
 
       <div className="panel">
-        <h3>Cartera por edades</h3>
+        <h3>Cartera por dias</h3>
         <div className="cards">
           <div className="kpi"><div className="label">Corriente</div><div className="value">{money(edades.corriente)}</div></div>
           <div className="kpi"><div className="label">1–30 días</div><div className="value">{money(edades.d1_30)}</div></div>
           <div className="kpi"><div className="label">31–60 días</div><div className="value">{money(edades.d31_60)}</div></div>
           <div className="kpi"><div className="label">61–90 días</div><div className="value">{money(edades.d61_90)}</div></div>
           <div className="kpi"><div className="label">Más de 90</div><div className="value">{money(edades.mas_90)}</div></div>
-          <div className="kpi"><div className="label">Total edades</div><div className="value">{money(edades.total)}</div></div>
+          <div className="kpi"><div className="label">Total dias</div><div className="value">{money(edades.total)}</div></div>
         </div>
       </div>
 
